@@ -22,6 +22,18 @@ const createActivity = async (req, res) => {
       return res.json({ err });
     }
   };
+  
+    const getAll = async (req, res) => {
+      try {
+        const activity = await models.activity.find();
+        
+        return res.json({ activity });
+      } catch (err) {
+        return res.json({ err });
+      }
+    };
+  
   module.exports = {
     createActivity,
+    getAll,
   };
