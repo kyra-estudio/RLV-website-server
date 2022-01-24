@@ -19,6 +19,7 @@ server.use(express.urlencoded({ extended: false }));
 //routes
 server.use('/api/user', routes.user);
 server.use('/api/activity', routes.activity);
+server.use('/api/information', routes.information);
 server.get("/", (req, res)=>{
     return res.json({ msg: "welcome!!"})
 })

@@ -32,6 +32,7 @@ const createActivity = async (req, res) => {
         return res.json({ err });
       }
     };
+    
   
   module.exports = {
     createActivity,

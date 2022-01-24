@@ -20,7 +20,7 @@ const signIn = async (req, res) => {
       email: user.email
     }
     const token = jwt.sign({ data }, config.jwt.secret, { expiresIn: '1h' });
-    return res.json({ token,  avatar:user.avatar, name: user.name });
+    return res.json({ token,  avatar:user.avatar, name: user.name, id: user._id });
   } catch (err) {
     console.log(err);
     return res.status(409).json({ error: 'Hubo un error!' });
