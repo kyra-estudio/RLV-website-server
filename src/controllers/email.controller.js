@@ -13,7 +13,7 @@ const sendEmail = async (req, res) => {
       secure: false,
       auth: {
         user: 'relieve.escuela@gmail.com',
-        pass: '#TJ28850@',
+        pass: '',
       },
       tls: {
         // do not fail on invalid certs
