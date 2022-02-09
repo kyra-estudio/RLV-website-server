@@ -1,5 +1,5 @@
 const values = {
-    imageFolder: "image",
+    
     avatarFolder: "avatar"
 }
 

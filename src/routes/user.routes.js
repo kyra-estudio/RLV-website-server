@@ -6,7 +6,7 @@ const router = Router();
 
 router.post('/signIn', controllers.user.signIn);
 router.post('/signUp', uploads.single(values.avatarFolder), controllers.user.signUp);
-// router.post("/logout", controllers.user.logout)
-// router.get("/getAll", controllers.user.getAll)
+router.get('/userGetAll', controllers.user.userGetAll);
+router.delete('/removeUser', controllers.user.removeUser);
 
 module.exports = router;
