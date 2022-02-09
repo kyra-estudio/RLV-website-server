@@ -1,7 +1,7 @@
 const values = require('./values');
 
 const config = {
-  hostname: 'https://rlvserver.herokuapp.com/',
+  hostname: 'https://relivewebapi.azurewebsites.net/',
   //hostname: 'http://localhost:' + process.env.PORT_DEV + '/',
   database: {
     url: `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.obdxl.mongodb.net/relieve?retryWrites=true&w=majority`
