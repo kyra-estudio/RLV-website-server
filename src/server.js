@@ -8,7 +8,7 @@ const routes = require('./routes');
 const server = express();
 
 //settings
-server.set('PORT', process.env.PORT || process.env.PORT_DEV);
+server.set('PORT', process.env.PORT ?? process.env.PORT_DEV);
 
 //middlewares
 server.use(cors());
